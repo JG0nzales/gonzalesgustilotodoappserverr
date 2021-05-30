@@ -14,6 +14,6 @@ app.use("/authentication", require("./routes/jwtAuth"));
 app.use("/dashboard", require("./routes/dashboard"));
 
 var PORT = process.env.PORT || 5000;
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log(`Server is starting on port ${PORT}`);
 });
